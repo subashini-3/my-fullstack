@@ -1,0 +1,158 @@
+/* Color Palette: https://coolors.co/palette/132a13-31572c-4f772d-90a955-ecf39e */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ecf39e;
+  color: #132a13;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: white;
+  border-bottom: 3px solid #31572c;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.company-info h1 {
+  font-size: 1.5rem;
+  color: #132a13;
+}
+
+.contact-buttons a {
+  background-color: #4f772d;
+  color: white;
+  padding: 10px 15px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  background-color: #31572c;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 0;
+  align-items: center;
+}
+
+.main-image {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  color: #4f772d;
+}
+
+#products {
+  background-color: #f5fcd0;
+  padding: 40px 0;
+}
+
+.product-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.product-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 300px;
+  flex: 1 1 300px;
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+#contact {
+  background-color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+#contact h2 {
+  color: #31572c;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+footer {
+  background-color: #132a13;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .about-section, .product-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} 

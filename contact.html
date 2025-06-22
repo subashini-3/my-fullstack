@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact.css">
+  
+</head>
+<body>
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" name="name" required><br>
+    <input type="email" placeholder="Your Email" name="email" required><br>
+    <textarea placeholder="Your Message" name="message" required></textarea><br>
+    <button type="submit">Send</button><br>
+
+    <a href="index.html">Back to home</a>
+  </form>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData.entries());
+
+      const res = await fetch('http://localhost:3000/api/contact', {
+        method: 'POST',
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.text();
+      alert(result);
+    });
+  </script>
+</body>
+</html>

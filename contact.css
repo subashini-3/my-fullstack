@@ -1,0 +1,83 @@
+/* Fullscreen background image */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url('https://i.ibb.co/vxtCXqsX/download-11.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+  /* Contact Us heading */
+  h2 {
+    color: #155724;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: rgba(223, 240, 216, 0.8);
+    padding: 10px 20px;
+    border-radius: 12px;
+  }
+  
+  /* Contact form styling */
+  #contactForm {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    width: 340px;
+    text-align: center;
+  }
+  
+  /* Inputs and textarea */
+  #contactForm input,
+  #contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #28a745;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  
+  #contactForm input:focus,
+  #contactForm textarea:focus {
+    border-color: #218838;
+  }
+  
+  /* Submit button in green */
+  #contactForm button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #contactForm button:hover {
+    background-color: #218838;
+  }
+  
+  /* Back link styling */
+  #contactForm a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #28a745;
+    font-size: 14px;
+  }
+  
+  #contactForm a:hover {
+    text-decoration: underline;
+  }
+  

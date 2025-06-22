@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #333;
+  }
+  
+  header {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header h1 {
+    color: #006400;
+    margin-bottom: 5px;
+  }
+  
+  header p {
+    font-size: 14px;
+  }
+  
+  section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .about p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .factsheet h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #228B22;
+  }
+  
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .fact-column {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    flex: 1 1 280px;
+    border-radius: 8px;
+  }
+  
+  .fact-column h3 {
+    color: #155724;
+    margin-bottom: 10px;
+  }
+  
+  .fact-column ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .fact-column li {
+    margin-bottom: 8px;
+  }
+  
+  .quote {
+    background: #e0f2e9;
+    text-align: center;
+  }
+  
+  .quote-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #28a745;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+  }
+  
+  .quote-btn:hover {
+    background: #1e7e34;
+  }
+  
+  .gallery .album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .album-item {
+    width: 220px;
+    text-align: center;
+  }
+  
+  .album-item img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .album-item p {
+    margin-top: 8px;
+    font-weight: 500;
+  }
+  
+  footer {
+    background: #006400;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .facts {
+      flex-direction: column;
+    }
+  
+    .album {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .album-item {
+      width: 80%;
+    }
+  }
+  
